@@ -1,26 +1,25 @@
 import React from 'react';
 import Box from '@mui/material/Box';
+import { Avatar, Chip, Divider } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import ListItemText from '@mui/material/ListItemText';
-import CardMedia from '@mui/material/CardMedia';
 import Container from 'components/Container';
 import Typewriter from 'Typewriter/typewriter';
 import LocalPostOfficeIcon from '@mui/icons-material/LocalPostOffice';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import RssFeedIcon from '@mui/icons-material/RssFeed';
+import avatar from '../assets/avatar.png';
 
 const mock = [
   {
     name: 'SKILLS:',
-    title: 'HTML - CSS - JavaScript - React - NodeJS - Python - Mongo - Postgresql - AWS Cloud Services - Unit Testing - CI/CD',
-    avatar: 'https://assets.maccarianagency.com/avatars/img3.jpg',
+    tags: ['HTML', 'CSS', 'JavaScript', 'React',  'NodeJS', 'Python', 'Mongo', 'Postgresql', 'AWS Cloud Services', 'Unit Testing', 'CI/CD', 'Power BI'],
+    avatar: avatar
   },
 ];
 
@@ -32,19 +31,15 @@ const HeadShot= () => {
           < Typography fontWeight={700} variant={'h4'} align={'center'}>
             Raphael Smith
           </Typography>
-          <Typography
-            sx={{
-              textTransform: 'uppercase',
-            }}
-            gutterBottom
-            color={'text.secondary'}
-            align={'center'}
-            fontWeight={700}
-          >
-            <Typewriter text="Full-stack Software Engineer | Junior Data Scientist" delay={100} />
-            
-          </Typography>
-          
+          <Divider />
+          <p style={{ textAlign: 'center'}}>
+            <b><LocalPhoneIcon/> </b> (916) 707-4373{' '} | {' '} 
+            <b><LocalPostOfficeIcon/> </b> codesmithr@outlook.com{' '} | {' '} 
+            <b><AccountTreeIcon/> </b>Portfolio: <a href='https://www.codesmithr.com' target="_blank" rel="noopener noreferrer">www.codesmithr.com</a>{' '} | {' '} 
+            <a href='https://www.github.com/rlondon3' target='_blank' rel='noopener noreferrer' ><GitHubIcon /></a>
+            <a href='https://www.linkedin.com/in/raphael-smith-b91a65206/' target='_blank' rel='noopener noreferrer'><LinkedInIcon /></a>
+            <a href='https://programmingthestreets.hashnode.dev/' target='_blank' rel='noopener noreferrer'><RssFeedIcon /></a>
+          </p>
         </Box>
         <Grid container spacing={2}>
           {mock.map((item, i) => (
@@ -57,24 +52,39 @@ const HeadShot= () => {
                 }}
               >
                 <Box
-                  component={CardMedia}
-                  borderRadius={2}
-                  width={1}
-                  height={1}
-                  minHeight={320}
-                  image={item.avatar}
+                  component={Avatar}
+                  width={{ xs: 280, sm: 280, md: 320 }}
+                  height={{ xs: 280, sm: 280, md: 320 }}
+                  src={item.avatar}
                 />
                 <Box
                   component={CardContent}
                   bgcolor={'transparent'}
                   marginTop={-5}
                 >
-                  <Box component={Card}>
+                  <Box component={Card} paddingTop={3}>
+                    <Typography
+                      sx={{
+                        textTransform: 'uppercase',
+                      }}
+                      gutterBottom
+                      color={'text.secondary'}
+                      align={'center'}
+                      fontWeight={700}
+                    >
+                      <Typewriter text="Full-stack Software Engineer | Junior Data Scientist" delay={100} />
+                    </Typography>
                     <CardContent>
-                      <ListItemText
-                        primary={item.name}
-                        secondary={item.title}
-                      />
+                      {item.tags.map((item) => (
+                        <Chip
+                          key={item}
+                          label={item}
+                          component="a"
+                          href=""
+                          size={'small'}
+                          sx={{ marginBottom: 1, marginRight: 1 }}
+                        />
+                      ))}
                     </CardContent>
                   </Box>
                 </Box>
@@ -87,23 +97,6 @@ const HeadShot= () => {
               background: 'transparent',
               backgroundImage: 'none',
             }}>
-              <Typography variant='h5'><PermContactCalendarIcon/>Contact</Typography>
-              <br/>
-              
-              <p style={{ textAlign: 'center'}}>
-                <b><LocalPhoneIcon/> </b> (916) 707-4373
-                <br/>
-                <br/>
-                <b><LocalPostOfficeIcon/> </b> codesmithr@outlook.com
-                <br/>
-                <br/>
-                <b><AccountTreeIcon/> </b>Portfolio: <a href='https://www.codesmithr.com' target="_blank" rel="noopener noreferrer">www.codesmithr.com</a>
-                <br/>
-                <br/>
-                <a href='https://www.github.com/rlondon3' target='_blank' rel='noopener noreferrer' ><GitHubIcon /></a>
-                <a href='https://www.linkedin.com/in/raphael-smith-b91a65206/' target='_blank' rel='noopener noreferrer'><LinkedInIcon /></a>
-                <a href='https://programmingthestreets.hashnode.dev/' target='_blank' rel='noopener noreferrer'><RssFeedIcon /></a>
-              </p>
             </Card>
           </Grid>
         </Grid>

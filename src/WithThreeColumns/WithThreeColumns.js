@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import Container from 'components/Container';
 import HeadShot from 'Headshot/headshot';
 import { Typography } from '@mui/material';
-//import HeadShot from 'Headshot/headshot';
+import Strengths from 'Strengths';
 
 const ChildMock = () => {
   const theme = useTheme();
@@ -50,7 +50,7 @@ const WithThreeColumns = () => {
               <Box p={4}>
                 <Grid container spacing={4}>
                   <Grid item xs={12} md={6}>
-                    <ChildMock />
+                    <Strengths />
                   </Grid>
                   <Grid item xs={12} md={6}>
                     <ChildMock />
