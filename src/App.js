@@ -1,10 +1,10 @@
+import Resume_Container from 'Resume_Container';
 import './App.css';
-import WithThreeColumns from 'WithThreeColumns';
 
 function App() {
   return (
     <div className="App">
-      <WithThreeColumns />
+      <Resume_Container />
     </div>
   );
 }

@@ -3,29 +3,29 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Container from 'components/Container';
-import HeadShot from 'Headshot/headshot';
 import { Typography } from '@mui/material';
-import Strengths from 'Strengths';
+import Overview from 'Overview';
+import Grid_of_two from 'Grid_of_two';
+import Work_experience from 'Work_experience';
 
-const WithThreeColumns = () => {
+const Resume_Container = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
 
   return (
-    <Box>
+    <Box sx={{ margin: 4 }}>
       <Container>
         <Typography variant='h6' color='grey'>Cloud Resume</Typography>
       </Container>
-      <HeadShot
+      <Overview
         variant={isMd ? 'permanent' : 'temporary'}
       />
-      <Box>
-        <Strengths />
-      </Box>
+      <Grid_of_two/>
+      <Work_experience />
     </Box>
   );
 };
 
-export default WithThreeColumns;
+export default Resume_Container;
