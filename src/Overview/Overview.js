@@ -85,7 +85,7 @@ const HeadShot= () => {
             backgroundImage: 'none',
           }}>
             <Box component={Card}>
-              <Typography variant='h5'><b>SUMMARY</b></Typography>
+              <Typography variant='h5' marginBottom={1}><b>SUMMARY</b></Typography>
               <Typography marginBottom={5}>Proven developer with a trackable interest in data science and 3 years of experience building software to solve business
                 problems. Detailed, thorough, and reliably meet deadlines in demanding and fast paced environments. Quick learner, energetic 
                 collaborator, and advocate of fun and hardwork on the job. 
