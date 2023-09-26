@@ -12,6 +12,7 @@ import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import RssFeedIcon from '@mui/icons-material/RssFeed';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Box from '@mui/material/Box';
 import avatar from '../assets/avatar.png';
 
@@ -51,13 +52,14 @@ const HeadShot= () => {
           <Typewriter text="Full-stack Software Engineer | Junior Data Scientist" delay={100} />
         </Typography>
         <Divider />
-        <Typography style={{ textAlign: 'center'}}>
+        <Typography style={{ textAlign: 'center' }}>
+          <b><LocationOnIcon /></b> Shasta Lake, CA{' '} | {' '} 
           <b><LocalPhoneIcon/> </b> (916) 707-4373{' '} | {' '} 
           <b><LocalPostOfficeIcon/> </b> codesmithr@outlook.com{' '} | {' '} 
           <b><AccountTreeIcon/> </b>Portfolio: <a href='https://www.codesmithr.com' target="_blank" rel="noopener noreferrer">www.codesmithr.com</a>{' '} | {' '} 
-          <a href='https://www.github.com/rlondon3' target='_blank' rel='noopener noreferrer' ><GitHubIcon /></a>
-          <a href='https://www.linkedin.com/in/raphael-smith-b91a65206/' target='_blank' rel='noopener noreferrer'><LinkedInIcon /></a>
-          <a href='https://programmingthestreets.hashnode.dev/' target='_blank' rel='noopener noreferrer'><RssFeedIcon /></a>
+          <a className='socials' style={{ color: 'black' }} href='https://www.github.com/rlondon3' target='_blank' rel='noopener noreferrer' ><GitHubIcon /></a> &nbsp; 
+          <a className='socials' style={{ color: 'black' }} href='https://www.linkedin.com/in/raphael-smith-b91a65206/' target='_blank' rel='noopener noreferrer'><LinkedInIcon /></a> &nbsp; 
+          <a className='socials' style={{ color: 'black' }} href='https://programmingthestreets.hashnode.dev/' target='_blank' rel='noopener noreferrer'><RssFeedIcon /></a> &nbsp; 
         </Typography>
       </Box>
       <br />

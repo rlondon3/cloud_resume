@@ -19,7 +19,7 @@ const mock = [
     description2:
     'BA Religion, Andrews University, 2016',
     description3: 
-    'Fullstack JavaScript Developer, Udacity, 16 Weeks'
+    'Fullstack JavaScript Developer, Udacity, 2021'
   },
 ];
 

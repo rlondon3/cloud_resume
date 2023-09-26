@@ -34,6 +34,9 @@
 .css-75qvwb-MuiList-root {
   padding-left: 0 !important;
 }
+.socials:hover svg {
+  color: gray;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
