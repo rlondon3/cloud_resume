@@ -25,7 +25,7 @@ const mock = [
     'Strengthened the English track literature department, post-covid, by providing staff training on how to teach ELA to ESOL learners. Taught and mentored two 4 grade classes.',
     accomplishments: [
       'Jointly prepared curriculums, benchmark testing, and extra-curriculuar activities for 4 grade English immersion cohort; which allowed for data tracking of the academic and emotional progress of students returning to school after months of home schooling.',
-      'Participated in the "Responsible Leaders" committee; and aided in improving communication between teachers and administration',
+      'Participated in the "Responsible Leaders" committee; and aided in improving communication between teachers and administration.',
     ]
   },
   {
@@ -35,7 +35,7 @@ const mock = [
     'Managed, coordinated, and taught Content-based ESL for the International College Beijing(ICB). Responsible for supporting over 200 students within the college.',
     accomplishments: [
       'Managed 12 writing lab instructors by providing educational resources and culturally relavant professional development; which resulted in foreign(non-Chinese) lecturer retention.',
-      'Liaisoned for visiting scholars from University of Colorado Denver; which contributed to cultural research necessary for research in the field of communications.',
+      'Liaisoned for visiting scholars from University of Colorado Denver; which contributed to cultural research necessary in the field of communications.',
       'Implemented the Content-based ESL curriculum; which allowed for the college to successfully hire foreign talents and meet departmental staffing goals.',
     ]
   },

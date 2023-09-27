@@ -49,7 +49,7 @@ const HeadShot= () => {
           align={'center'}
           fontWeight={700}
         >
-          <Typewriter text="Full-stack Software Engineer | Junior Data Scientist" delay={100} />
+          <Typewriter text="Fullstack Software Engineer | Junior Data Scientist" delay={100} />
         </Typography>
         <Divider />
         <Typography style={{ textAlign: 'center' }}>
