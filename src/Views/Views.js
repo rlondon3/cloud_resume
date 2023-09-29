@@ -55,7 +55,7 @@ const Views = () => {
                   <Typography gutterBottom>{item.label}</Typography>
                   <Typography
                     variant={'h4'}
-                    color={'primary'}
+                    color={'green'}
                     fontWeight={700}
                     display={'flex'}
                     alignItems={'flex-end'}
