@@ -23,7 +23,7 @@ const mock = [
     tags: ['HTML', 'CSS', 'JavaScript', 'React', 'TypeScript', 'NodeJS', 'Python', 'No SQL', 
       'SQL', 'AWS Cloud Services', 'Unit Testing', 'CI/CD', 
       'Power BI', 'Jupyter Notebook', 'Visual Studio', 'Visual Studio Code',
-      'Business Metrics/Data', 'Self-Starter', 'Creative Problem Solver'],
+      'Business Metrics/Data Analysis', 'Self-Starter', 'Creative Problem Solver'],
     avatar: avatar
   },
 ];
