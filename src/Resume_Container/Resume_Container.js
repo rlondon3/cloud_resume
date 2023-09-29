@@ -7,6 +7,7 @@ import { Typography } from '@mui/material';
 import Overview from 'Overview';
 import Grid_of_two from 'Grid_of_two';
 import Work_experience from 'Work_experience';
+import Views from 'Views';
 
 const Resume_Container = () => {
   const theme = useTheme();
@@ -24,6 +25,7 @@ const Resume_Container = () => {
       />
       <Grid_of_two/>
       <Work_experience />
+      <Views />
     </Box>
   );
 };

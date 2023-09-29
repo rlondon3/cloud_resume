@@ -6,7 +6,7 @@ import Container from 'components/Container';
 import Education_training from 'Education_training';
 import Certifications from 'Certifications';
 
-const NewsletterWithImage = () => {
+const GridOfTwo= () => {
 
   return (
     <Container>
@@ -33,4 +33,4 @@ const NewsletterWithImage = () => {
   );
 };
 
-export default NewsletterWithImage;
+export default GridOfTwo;
