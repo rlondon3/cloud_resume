@@ -7,6 +7,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
+    "deploy": "aws s3 sync build/ s3://raphaelsmithcloudresume",
+    "prod": "npm run build && npm run deploy",
     "prettier:fix": "prettier './src/**/*.js' --write",
     "eslint:fix": "eslint ./src --fix",
     "codeStyle:fix": "npm run prettier:fix && npm run eslint:fix",

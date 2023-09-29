@@ -16,7 +16,7 @@ const mock = [
     description:
     'Certified Cloud Practitioner, On-going',
     description2: 
-    'PostgreSQL 12 Associate Certication, On-going'
+    'PostgreSQL 12 Associate Certification, On-going'
   },
 ];
 
