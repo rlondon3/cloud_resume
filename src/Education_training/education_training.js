@@ -43,7 +43,7 @@ const Education_training = () => {
                 alignItems={'center'}
               >
               </Box>
-              <Box marginLeft={2}>
+              <Box>
                 <ListItemText
                   primary={item.title}
                   secondary={item.subtitle}

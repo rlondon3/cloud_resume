@@ -1,10 +1,13 @@
 import React from 'react';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import Container from 'components/Container';
+import { Divider } from '@mui/material';
 
 const mock = [
   {
@@ -42,15 +45,19 @@ const mock = [
 ];
 
 const Work_experience = () => {
+  const theme = useTheme();
+  const isSm = useMediaQuery(theme.breakpoints.up('sm'), {
+    defaultMatches: true,
+  });
   return (
     <Box bgcolor="alternate.main">
       <Container>
-        <Typography variant='h5' style={{fontWeight: 700}}>PROFESSIONAL EXPERIENCE</Typography>
+        <Divider />
+        <Typography variant='h5' style={{fontWeight: 700, paddingTop: '20px', textAlign: !isSm ? 'start' : '', paddingLeft: !isSm ? '30px' : ''}}>PROFESSIONAL EXPERIENCE</Typography>
         <List
           sx={{
             width: '100%',
             bgcolor: 'background.paper',
-            padding: 2,
             borderRadius: 2,
             boxShadow: 0,
           }}

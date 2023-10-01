@@ -27,8 +27,16 @@
 .App-link {
   color: #61dafb;
 }
+.css-w71l55-MuiGrid-root>.MuiGrid-item {
+  padding-left: 0 !important;
+}
+
+.css-1qn10d0-MuiGrid-root>.MuiGrid-item {
+  padding-left: 0 !important;
+}
 .css-bvp0cc {
   padding-top: 0 !important;
+  padding-left: 0 !important;
   padding-bottom: 0 !important;
 }
 .css-75qvwb-MuiList-root {
