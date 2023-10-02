@@ -4,11 +4,12 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
 import Container from 'components/Container';
+import { Divider } from '@mui/material';
 
 
 const mock = [
   {
-    label: 'Total Views',
+    label: 'AWS Cloud Resume Views',
     value: ''
   },
 ];
@@ -35,6 +36,7 @@ const Views = () => {
   return (
     <Box bgcolor={'alternate.main'}>
       <Container>
+        <Divider />
         <Grid container spacing={0}>
           {mock.map((item, i) => (
             <Grid
@@ -52,19 +54,20 @@ const Views = () => {
                 }}
               >
                 <Box>
-                  <Typography gutterBottom>{item.label}</Typography>
+                  <Typography color='grey' fontSize={15} gutterBottom>{item.label}</Typography>
                   <Typography
                     variant={'h4'}
                     color={'green'}
                     fontWeight={700}
+                    fontSize={25}
                     display={'flex'}
                     alignItems={'flex-end'}
                     lineHeight={1}
                   >
                     {count}
                   </Typography>
+                  
                 </Box>
-                
               </Box>
             </Grid>
           ))}

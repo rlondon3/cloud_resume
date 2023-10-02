@@ -1,9 +1,9 @@
 import React from 'react';
 import { Avatar, Chip, Divider } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import Container from 'components/Container';
 import Typewriter from 'Typewriter/typewriter';
 import LocalPostOfficeIcon from '@mui/icons-material/LocalPostOffice';
@@ -29,7 +29,10 @@ const mock = [
 ];
 
 const HeadShot= () => {
-
+  const theme = useTheme();
+  const isSm = useMediaQuery(theme.breakpoints.up('sm'), {
+    defaultMatches: true,
+  });
   return (
     <Container>
       <Box
@@ -66,34 +69,35 @@ const HeadShot= () => {
       <Grid container spacing={2} paddingTop={4}>
         {mock.map((item, i) => (
           <Grid item xs={12} md={6} key={i} >
-            <Card  align={'center'} sx={{
+            <Box  align={'center'} sx={{
               boxShadow: 0,
               background: 'transparent',
               backgroundImage: 'none',
             }}>
-              <Box padding={5} xs={12} md={6}
+              <Box padding={!isSm ? 2 : 5} xs={12} md={6}
                 component={Avatar}
                 width={{ xs: 320, sm: 500, md: 320 }}
                 height={{ xs: 320, sm: 500, md: 320 }}
+
                 src={item.avatar}
               />
-            </Card>
+            </Box>
           </Grid>
         ))}
         <Grid paddingTop={5} xs={12} md={6}>
-          <Card sx={{
+          <Box sx={{
             boxShadow: 0,
             background: 'transparent',
             backgroundImage: 'none',
           }}>
-            <Box component={Card}>
+            <Box>
               <Typography variant='h5' marginBottom={1}><b>SUMMARY</b></Typography>
               <Typography marginBottom={5}>Proven developer with a trackable interest in data science and 3 years of experience building software to solve business
                 problems. Detailed, thorough, and reliably meet deadlines in demanding and fast paced environments. Quick learner, energetic 
                 collaborator, and advocate of fun and hardwork on the job. 
               </Typography>
-              <Typography variant='h5'><b>SKILLS</b></Typography>
-              <CardContent>
+              <Typography variant='h5' marginBottom={1}><b>SKILLS</b></Typography>
+              <Box>
                 {mock[0].tags.map((item) => (
                   <Chip
                     key={item}
@@ -104,9 +108,9 @@ const HeadShot= () => {
                     sx={{ marginBottom: 1, marginRight: 1 }}
                   />
                 ))}
-              </CardContent>
+              </Box>
             </Box>
-          </Card>
+          </Box>
         </Grid>
       </Grid>
       <Divider />
