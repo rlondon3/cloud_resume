@@ -18,7 +18,6 @@ const mock = [
     accomplishments: [
       'Utilize JavaScript libraries to revamp the user interface of student portfolio data; resulting in an increase in user retention and a 15% decrease in customer support inquiries, as the intuitive and responsive design improved the overall user experience and reduced friction in accessing educational resources.',
       'Collaborated with Senior Developer and built a custom student behavior dashboard to provide behavior analysis and data-driven insights on students. Feedback from teachers was overwhelmingly positive: the dashboard has become a valuable artifact for principals and administration when presenting data findings to their district leaders.',
-      'Collaborated closely with our data analyst team to streamline and clean raw data sets, ensuring the accuracy and reliability of the information used for our analytics.',
       'Refactored core UI from aspx and vanilla JavaScript into React functional components with hooks; dramatically improving the programming logic used to mimic a dynamic web application by eliminating jquery show/hide functions, window.reload, and aspx files.'
     ]
   },
